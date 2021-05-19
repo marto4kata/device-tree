@@ -42,7 +42,7 @@ export const DeviceTable = ({ devices }) => {
             <StyledTableCell>Name</StyledTableCell>
             <StyledTableCell align="right">Vendor Id</StyledTableCell>
             <StyledTableCell align="right">Product Id</StyledTableCell>
-            <StyledTableCell align="right">String descriptor</StyledTableCell>
+            <StyledTableCell align="right">Manufacturer</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -53,7 +53,7 @@ export const DeviceTable = ({ devices }) => {
               </StyledTableCell>
               <StyledTableCell align="right">{device.vendorId}</StyledTableCell>
               <StyledTableCell align="right">{device.productId}</StyledTableCell>
-              <StyledTableCell align="right">{device?.stringDescriptor}</StyledTableCell>
+              <StyledTableCell align="right">{device?.manufacturer}</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>

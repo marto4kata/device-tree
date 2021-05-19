@@ -3,6 +3,17 @@
 Note: Current setup uses hardcoded devices so I can demonstrate rendering of tree structure. If you want to see real devices uncomment this line https://github.com/marto4kata/device-tree/blob/7c6aa8b052de402a187c3c64e375aedadedbf279/api/device.js#L20.
 I didn't manage to get the tree structure for real devices as I am unable to detect which device is connected to which hub, so I can get only flat data.
 
+## Images
+
+### Tree view page
+![Tree view](/screenshots/TreeView.PNG)
+<br><br>
+### Hubs page
+![Hubs](/screenshots/Hubs.PNG)
+<br><br>
+### Devices page
+![Devices](/screenshots/Devices.PNG)
+
 ## Start the project
 
 To start the project start api and frontend server simultaneously.

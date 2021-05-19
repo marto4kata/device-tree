@@ -10,49 +10,48 @@ usbDetect.on('remove', function(device) { console.log('remove', device); });
 usbDetect.on('change', function(device) { console.log('change', device); });
 
 function getDeviceTree() {
-  // Uncomment this for real devices
-  // return usbDetect.find()
+ // return usbDetect.find()
   return Promise.resolve([
     {
       productId: 1,
-      deviceName: 'Hub1',
+      deviceName: 'USB Root Hub',
       type: 'hub',
       deviceAddress: 1,
       vendorId: 5453,
-      stringDescriptor: 'usdgfisffse',
+      manufacturer: '(Standard USB Host Controller)',
       children: [
         {
-          deviceName: 'gdfgfd',
+          deviceName: 'Generic USB Hub',
           vendorId: 35824,
           productId: 2,
           type: 'hub',
-          stringDescriptor: 'usdgfis',
+          manufacturer: '(Standard USB HUBs)',
           deviceAddress: 2,
           children: [
             {
-              deviceName: 'gdfgfd',
+              deviceName: 'Hub',
               vendorId: 582443,
               deviceAddress: 3,
               productId: 3,
               type: 'hub',
-              stringDescriptor: 'usdgfis',
+              manufacturer: '(USB HUB)',
               children: [
                 {
-                  deviceName: 'gdffd',
+                  deviceName: 'USB Input Device',
                   vendorId: 58244,
                   productId: 4,
                   deviceAddress: 4,
                   type: 'device',
-                  stringDescriptor: 'usdgfis',
+                  manufacturer: '(Standard USB HUB)',
                 }
               ]
             },{
-              deviceName: 'gdffd',
+              deviceName: 'HD Cam',
               vendorId: 58244,
               productId: 7,
               deviceAddress: 5,
               type: 'device',
-              stringDescriptor: 'usdgfis',
+              manufacturer: 'Microsoft',
             }
           ]
         }

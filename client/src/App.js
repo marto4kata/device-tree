@@ -3,7 +3,7 @@ import { LinkTab, TabPanel } from "./components/Navbar";
 import {
   CssBaseline,
 } from '@material-ui/core';
-import { Tree, Hubs, Devices } from "./features";
+import { DeviceTree, Hubs, Devices } from "./features";
 import React, { useState } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
@@ -47,7 +47,7 @@ function App() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <Tree/>
+        <DeviceTree/>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Hubs/>

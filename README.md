@@ -30,6 +30,6 @@ Challenges: Rendering tree data using recursion with MaterialUI, but at the end 
 
 ### API
 
-For api I made simple node.js server. Implemented endpoint using express. Communicates with client via http. Would be easy to add socket connection, I was planning to use library like https://socket.io/.
+For api I made simple node.js server. Implemented endpoint using express. For usb detection I used https://www.npmjs.com/package/usb-detection.  Communicates with client via http. Would be easy to add socket connection, I was planning to use library like https://socket.io/.
 Challenges: Getting which devices are connected to which hubs.
 

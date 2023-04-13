@@ -28,7 +28,8 @@ export const DeviceTree = () => {
   useEffect(() => {
     fetch(`${API_URL}/tree`)
       .then((res) => res.json())
-      .then((fetchedDevices) => setDevices(fetchedDevices));
+      .then((fetchedDevices) => setDevices(fetchedDevices))
+      .catch((error) => console.error('Error fetching devices:', error));
   }, []);
 
   return (
